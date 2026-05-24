@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Sheila ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:black;
+    overflow-x:hidden;
+    font-family:'Poppins',sans-serif;
+    color:white;
+}
+
+/* INTRO */
+
+.intro{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    z-index:999;
+    animation:fadeOut 3s forwards;
+    animation-delay:4s;
+}
+
+.intro h1{
+    font-size:2rem;
+    text-align:center;
+    animation:fade 2s infinite alternate;
+}
+
+@keyframes fade{
+    from{opacity:0.4;}
+    to{opacity:1;}
+}
+
+@keyframes fadeOut{
+    to{
+        opacity:0;
+        visibility:hidden;
+    }
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    min-height:100vh;
+    background:url('TU_IMAGEN_ROBLOX.png') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:5rem;
+    font-family:'Great Vibes',cursive;
+    color:#fff;
+    text-shadow:0 0 20px rgba(255,255,255,0.7);
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:1.3rem;
+    max-width:700px;
+    line-height:1.7;
+}
+
+/* CARTAS */
+
+.section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.section h2{
+    font-size:3rem;
+    margin-bottom:40px;
+    font-family:'Great Vibes',cursive;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.card{
+    width:320px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:25px;
+    overflow:hidden;
+    backdrop-filter:blur(10px);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.02);
+}
+
+.card img{
+    width:100%;
+    display:block;
+}
+
+.card p{
+    padding:20px;
+    line-height:1.6;
+}
+
+/* MENSAJE FINAL */
+
+.final{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:30px;
+    background:linear-gradient(to top,#000,#1a0010);
+}
+
+.final h2{
+    font-size:4rem;
+    font-family:'Great Vibes',cursive;
+    margin-bottom:30px;
+}
+
+.final p{
+    max-width:800px;
+    line-height:2;
+    font-size:1.2rem;
+}
+
+button{
+    margin-top:40px;
+    padding:15px 40px;
+    border:none;
+    border-radius:40px;
+    background:#ff4d88;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+    background:#ff1f6a;
+}
+
+/* CORAZONES */
+
+.heart{
+    position:fixed;
+    bottom:-20px;
+    color:#ff4d88;
+    animation:float 6s linear infinite;
+    z-index:9999;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+.final h2{
+    font-size:2.5rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MUSICA -->
+<audio autoplay loop>
+    <source src="Reik - Creo En Ti (LetraLyrics).mp3" type="audio/mp3">
+</audio>
+
+<!-- INTRO -->
+
+<div class="intro">
+    <h1>
+        Tengo algo importante que decirte... ❤️
+    </h1>
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Sheila ❤️</h1>
+
+<p>
+Aunque hayan pasado semanas difíciles,
+sigues siendo la persona que más quiero.
+No hice esta página para impresionarte...
+la hice porque todavía creo en nosotros.
+</p>
+
+</div>
+
+</section>
+
+<!-- CARTAS -->
+
+<section class="section">
+
+<h2>Nunca dejé de sentir esto ✨</h2>
+
+<div class="gallery">
+
+<div class="card">
+<img src="imagen1.jpg">
+<p>
+“Love has a thousand languages,
+but only one destination… you ❤️”
+</p>
+</div>
+
+<div class="card">
+<img src="imagen2.jpg">
+<p>
+El sol, la luna y las estrellas
+no brillan tanto como tus ojitos ✨
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FINAL -->
+
+<section class="final">
+
+<h2>Perdóname si te hice sentir mal...</h2>
+
+<p>
+No quiero borrar todo lo bonito que construimos.
+Extraño tus mensajes,
+tu voz,
+tu manera de hacerme sentir bien y contento.
+
+Tal vez no soy perfecto,
+pero mis sentimientos por ti siempre fueron reales.
+
+Y aunque estés molesta conmigo...
+mi corazón sigue eligiéndote a ti,
+una y otra vez.
+
+Te quiero en este universo
+y en todos los que existan ❤️
+</p>
+
+<button onclick="love()">
+❤️ Abrázame otra vez
+</button>
+
+<h3 style="margin-top:50px;font-family:'Great Vibes',cursive;font-size:2.5rem;">
+Con amor, Dayronn
+</h3>
+
+</section>
+
+<script>
+
+function love(){
+
+    alert("Gracias por existir Sheila ❤️");
+
+    for(let i=0;i<60;i++){
+
+        let heart=document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerHTML="❤️";
+
+        heart.style.left=Math.random()*100+"vw";
+        heart.style.fontSize=(Math.random()*30+20)+"px";
+        heart.style.animationDuration=(Math.random()*3+3)+"s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>{
+            heart.remove();
+        },6000);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

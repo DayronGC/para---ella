@@ -226,8 +226,8 @@ button:hover{
 <body>
 
 <!-- MUSICA -->
-<audio autoplay loop>
-    <source src="reik.mp3" type="audio/mp3">
+<audio id="music" loop>
+    <source src="Reik - Creo En Ti (LetraLyrics).mp3" type="audio/mp3">
 </audio>
 
 <!-- INTRO -->
@@ -310,7 +310,7 @@ Te quiero en este universo
 y en todos los que existan ❤️
 </p>
 
-<button onclick="iniciarTodo()">
+<button onclick="love()">
 ❤️ Abrázame otra vez
 </button>
 
@@ -325,11 +325,6 @@ Con amor, Dayronn
 function love(){
 
     alert("Gracias por existir Sheila ❤️");
-  const music = document.getElementById("music");
-
-    music.play();
-
-    corazones();
 
     for(let i=0;i<60;i++){
 
@@ -352,6 +347,16 @@ function love(){
 }
 
 </script>
+<script>
 
+window.addEventListener("click", () => {
+
+    const music = document.getElementById("music");
+
+    music.play();
+
+}, { once:true });
+
+</script>
 </body>
 </html>

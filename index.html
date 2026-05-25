@@ -226,10 +226,9 @@ button:hover{
 <body>
 
 <!-- MUSICA -->
-<audio id="music" loop>
-    <source src="Reik - Creo En Ti (LetraLyrics).mp3" type="audio/mp3">
-</audio>
-
+<button onclick="corazones()">
+❤️ Abrázame otra vez
+</button>
 <!-- INTRO -->
 
 <div class="intro">
@@ -346,17 +345,8 @@ function love(){
 
 }
 
-</script>
-<script>
-
-window.addEventListener("click", () => {
-
-    const music = document.getElementById("music");
-
-    music.play();
-
-}, { once:true });
 
 </script>
+
 </body>
 </html>

@@ -310,10 +310,9 @@ Te quiero en este universo
 y en todos los que existan ❤️
 </p>
 
-<button onclick="love()">
+<button onclick="iniciarTodo()">
 ❤️ Abrázame otra vez
 </button>
-
 <h3 style="margin-top:50px;font-family:'Great Vibes',cursive;font-size:2.5rem;">
 Con amor, Dayronn
 </h3>
@@ -322,30 +321,38 @@ Con amor, Dayronn
 
 <script>
 
-function love(){
+function iniciarTodo(){
 
-    alert("Gracias por existir Sheila ❤️");
+    const music = document.getElementById("music");
 
-    for(let i=0;i<60;i++){
+    music.play();
+
+    corazones();
+
+}
+
+function corazones(){
+
+    for(let i=0;i<50;i++){
 
         let heart=document.createElement("div");
-        heart.classList.add("heart");
+
+        heart.className="heart";
         heart.innerHTML="❤️";
 
         heart.style.left=Math.random()*100+"vw";
         heart.style.fontSize=(Math.random()*30+20)+"px";
-        heart.style.animationDuration=(Math.random()*3+3)+"s";
+        heart.style.animationDuration=(Math.random()*3+2)+"s";
 
         document.body.appendChild(heart);
 
         setTimeout(()=>{
             heart.remove();
-        },6000);
+        },5000);
 
     }
 
 }
-
 
 </script>
 
